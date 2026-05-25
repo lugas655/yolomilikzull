@@ -27,8 +27,6 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
       MYSQL_DATABASE: slimsumpo
-    ports:
-      - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
       # Mount init.sql untuk otomatis create table & insert data
